@@ -172,6 +172,7 @@ const ProductList = () => {
                         <thead>
                             <tr>
                                 <th>Product Name</th>
+                                <th>Company</th>
                                 <th>Category</th>
                                 <th>Price</th>
                             </tr>
@@ -181,6 +182,7 @@ const ProductList = () => {
                                 pageData.length > 0 ? pageData.map(item => (
                                     <tr key={item._id}>
                                         <td>{item.product_name}</td>
+                                        <td>{item.company}</td>
                                         <td>{item.category}</td>
                                         <td>{item.price}</td>
                                     </tr>

@@ -32,7 +32,7 @@ const Login = () => {
             console.log("Enter details");
         }
     }
-    
+
     const validateForm = () => {
         setErrors([]);
 
@@ -61,12 +61,12 @@ const Login = () => {
                 <div className="Auth-form-content">
                     <h3 className="Auth-form-title">Sign In</h3>
                     <div className="form-group mt-3">
-                        <label>Email address</label>
+                        <label>Username</label>
                         <input
                             type="text"
                             value={username}
                             className="form-control mt-1"
-                            placeholder="Enter email"
+                            placeholder="Enter Username"
                             onChange={(e)=>setUserName(e.target.value)} 
                         />
                     </div>

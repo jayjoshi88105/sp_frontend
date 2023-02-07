@@ -98,7 +98,7 @@ const Register = () => {
                             type="text"
                             value={username}
                             className="form-control mt-1"
-                            placeholder="e.g Jay Joshi"
+                            placeholder="e.g JayJoshi"
                             onChange={(e) => setUserName(e.target.value)}
                         />
                     </div>
