@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useIdleTimer } from 'react-idle-timer';
 
-const ITEMS_PER_PAGE = 4;
-const timeout = 7000
-const promptBeforeIdle = 3000
+const ITEMS_PER_PAGE = 10;
+const timeout = 120000
+const promptBeforeIdle = 60000
 
 const ProductList = () => {
     const auth = localStorage.getItem('data');
