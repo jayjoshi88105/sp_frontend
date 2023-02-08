@@ -27,7 +27,7 @@ In the project directory, you can run:
 #### `npm run build`
 
 ### Exmaple for continue session after prompt  
-![](https://github.com/jayjoshi88105/vdocmsfrontend/blob/master/ezgif.com-video-to-gif%20(1).gif)
+![](![image](https://user-images.githubusercontent.com/62538358/217426947-440af928-be4f-4e12-a93d-8123dad6d825.png))
 
 ### Exmaple for logout after prompt
 ![](https://github.com/jayjoshi88105/vdocmsfrontend/blob/master/ezgif.com-video-to-gif.gif)
