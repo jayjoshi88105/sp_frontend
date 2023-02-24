@@ -47,7 +47,7 @@ const Register = () => {
     const componentClicked = (data) => { }
 
     const collectData = async (e) => {
-        let result = await fetch("http://localhost:3002/signup", {
+        let result = await fetch("http://18.191.152.151/signup", {
             method: "POST",
             body: JSON.stringify({ username, dob, password }),
             headers: {

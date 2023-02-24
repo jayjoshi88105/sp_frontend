@@ -12,7 +12,8 @@ const Login = () => {
     const [errors, setErrors] = useState([]);
 
     const UserLogin = async () => {
-        let result = await fetch("http://localhost:3002/login", {
+
+        let result = await fetch(`http://18.191.152.151/login`, {
             method:"POST",
             body:JSON.stringify({username,password}),
             headers:{
