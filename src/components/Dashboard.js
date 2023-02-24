@@ -24,7 +24,7 @@ const ProductList = () => {
     const [open, setOpen] = useState(false)
 
     const getProducts = async () => {
-        let result = await fetch("http://18.191.152.151/products");
+        let result = await fetch("http://18.223.3.106/products");
 
         result = await result.json();
         setProducts(result.data);
@@ -35,7 +35,7 @@ const ProductList = () => {
         let key = event.target.value;
 
         if (key) {
-            let result = await fetch(`http://18.191.152.151/search/${key}`);
+            let result = await fetch(`http://18.223.3.106/search/${key}`);
             result = await result.json();
 
             if (result) {

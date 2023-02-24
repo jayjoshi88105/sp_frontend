@@ -13,7 +13,7 @@ const Login = () => {
 
     const UserLogin = async () => {
 
-        let result = await fetch(`http://18.191.152.151/login`, {
+        let result = await fetch(`http://18.223.3.106/login`, {
             method:"POST",
             body:JSON.stringify({username,password}),
             headers:{
