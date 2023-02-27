@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
 import { gapi } from 'gapi-script';
 import { isEmpty } from "react-form-validator-core/lib/ValidationRules";
 
@@ -39,10 +38,6 @@ const Register = () => {
     const onFailure = response => {
         console.log('FAILED', response);
     };
-
-    const responseFacebook = (response) => {
-        console.log(response);
-    }
 
     const componentClicked = (data) => { }
 
@@ -140,15 +135,6 @@ const Register = () => {
                             onSuccess={onSuccess}
                             onFailure={onFailure}
                         />
-                    </p>
-                    <p className="center">
-                        <FacebookLogin
-                            appId="1088597931155576"
-                            autoLoad={false}
-                            size="small"
-                            fields="name,email,picture"
-                            onClick={componentClicked}
-                            callback={responseFacebook} />
                     </p>
                     {/* <GoogleLogout
                             clientId={'211031872900-er9lb8h1n80h38ouhg0os25e0ckj161p.apps.googleusercontent.com'}
